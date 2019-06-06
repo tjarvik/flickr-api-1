@@ -3,3 +3,8 @@ Enter flickr id:
     <%= text_field_tag :flickr_id %>
     <%= submit_tag "submit" %>
 <% end %>
+<div>
+    <% @photos.each do |photo| %>
+        <p><img src="<%= photo %>"></p>
+    <% end %>
+</div>
